@@ -1,0 +1,23 @@
+{
+  "checkpoint_sha256": "191d188ccd07f6bbbd3862fd0297c3b64b6a475604cef5a1b3e364b87c41c4b1",
+  "split": "validation",
+  "description": "Same frozen neural weights and temperature; removed components are not recalibrated. No test scoring or checkpoint selection.",
+  "ablations": {
+    "without_prefix_cache": {
+      "bpb": 1.517147854768699,
+      "token_ppl": 24.672011839182083,
+      "nll_nats": 1207251.919460572,
+      "targets": 376599,
+      "utf8_bytes": 1148007,
+      "seconds": 38.32366420002654
+    },
+    "neural_only": {
+      "bpb": 1.5451260829209956,
+      "token_ppl": 26.17451674686034,
+      "nll_nats": 1229515.2536068116,
+      "targets": 376599,
+      "utf8_bytes": 1148007,
+      "seconds": 34.117051400011405
+    }
+  }
+}

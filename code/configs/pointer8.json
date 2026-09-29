@@ -1,0 +1,16 @@
+{
+  "vocab": 2048,
+  "width": 256,
+  "heads": 8,
+  "depth": 8,
+  "context": 256,
+  "ffn_hidden": 683,
+  "dropout": 0.1,
+  "scaled_residual_init": true,
+  "prefix_cache": {
+    "theta": 10.0,
+    "previous_bonus": 2.0,
+    "weight": 0.06
+  },
+  "copy_objective_weight": 0.75
+}

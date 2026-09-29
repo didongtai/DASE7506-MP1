@@ -1,0 +1,9 @@
+{
+  "student.py": "5d480d349cee7c913ce2757ba30cd99daebd39c7769b0ef3fb3d46d281796f91",
+  "student_cache.py": "214b6711e62db78ef571ff295b2ce46510893339545b3f9f862da67a82f0f5c4",
+  "student_pointer.py": "8038a1e6d6fbdf95157eb5c8df805390b4d9287317d9574db78acb7978dbcdf1",
+  "train.py": "dc2e5313abcacad976b23ab291e54a3a5f1b8ac3141f2c4efb12977e041bf6c9",
+  "common.py": "d40dc1fe6578b5993a563bdb4d9e5317ddc9fae8afe48822b66571c7042e84db",
+  "evaluate.py": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+  "checkpoint.pt": "191d188ccd07f6bbbd3862fd0297c3b64b6a475604cef5a1b3e364b87c41c4b1"
+}

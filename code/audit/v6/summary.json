@@ -1,0 +1,15 @@
+{
+  "current_checkpoint": "runs/final-candidate-depth6-v6/checkpoint.pt",
+  "checkpoint_sha256": "7e1a556f26f047b02d78d97b74564598913f1b18b7318f2275c846124666555c",
+  "test_bpb": 1.5189136237091485,
+  "validation_bpb": 1.5022012894865915,
+  "test_repeats_exact": true,
+  "cpu_budget_pass": true,
+  "worst_cpu_ratio": 3.9319593900656233,
+  "peak_working_set_gib": 2.2068405151367188,
+  "asset_bytes": 63905769,
+  "unit_tests_passed": 15,
+  "test_selection_before_freeze": false,
+  "source_hashes_verified": true,
+  "historical_v5_caveat": "v5 test evaluations preceded later development; this v6 freeze was selected from validation and must be disclosed."
+}

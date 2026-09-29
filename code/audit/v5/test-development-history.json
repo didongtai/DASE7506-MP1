@@ -1,0 +1,92 @@
+{
+  "limitation": "File modification times are observational evidence, not tamper-proof execution logs; repeated different-version test results are also recorded in the experiment document.",
+  "events": [
+    {
+      "file": "code\\runs\\baseline-s17\\test_cpu_fp32.json",
+      "kind": "test_evaluation",
+      "bpb": 2.1012602707557906,
+      "checkpoint_sha256": "373ecbab12cc5e3e6f5004dcc23f6c93d593057b0a509cef392410739fb59d32",
+      "modified_utc": "2026-09-21T09:42:15.639611+00:00"
+    },
+    {
+      "file": "code\\runs\\final-candidate-29m\\test_cpu_fp32.json",
+      "kind": "test_evaluation",
+      "bpb": 1.681743163795615,
+      "checkpoint_sha256": "e4e1ceb74ddcbb87a077d16dcca91d1bfe498dddd8b6f365c279a65711356c9d",
+      "modified_utc": "2026-09-23T17:49:35.297046+00:00"
+    },
+    {
+      "file": "code\\runs\\final-candidate-29m\\test_ram_measure.json",
+      "kind": "test_evaluation",
+      "bpb": 1.681743163795615,
+      "checkpoint_sha256": "e4e1ceb74ddcbb87a077d16dcca91d1bfe498dddd8b6f365c279a65711356c9d",
+      "modified_utc": "2026-09-23T17:51:39.346036+00:00"
+    },
+    {
+      "file": "code\\runs\\final-candidate-29m\\test_ram_measure2.json",
+      "kind": "test_evaluation",
+      "bpb": 1.681743163795615,
+      "checkpoint_sha256": "e4e1ceb74ddcbb87a077d16dcca91d1bfe498dddd8b6f365c279a65711356c9d",
+      "modified_utc": "2026-09-23T17:53:20.137493+00:00"
+    },
+    {
+      "file": "code\\runs\\final-candidate-gpu\\test_cpu_fp32.json",
+      "kind": "test_evaluation",
+      "bpb": 1.5588367056760617,
+      "checkpoint_sha256": "fc39a69a42085122c3ab0d7bfb4f3c60fb5980d343ef6ac7923df063e48a8e33",
+      "modified_utc": "2026-09-28T12:10:57.828090+00:00"
+    },
+    {
+      "file": "code\\runs\\final-candidate-depth8\\test_cpu_fp32.json",
+      "kind": "test_evaluation",
+      "bpb": 1.5559330531760873,
+      "checkpoint_sha256": "eb2a34d974da777760ad5c6fac8f25b8696564e752cf4e0e0466215ad9fa445f",
+      "modified_utc": "2026-09-28T12:45:48.706576+00:00"
+    },
+    {
+      "file": "code\\runs\\final-candidate-depth8-v3\\test_cpu_fp32.json",
+      "kind": "test_evaluation",
+      "bpb": 1.552751024947261,
+      "checkpoint_sha256": "0af48b1a24f4860623008d00bf5bc704d5a9f593face19c224e3498948c9e4d0",
+      "modified_utc": "2026-09-28T13:32:12.103291+00:00"
+    },
+    {
+      "file": "code\\runs\\final-candidate-depth8-v4\\test_cpu_fp32.json",
+      "kind": "test_evaluation",
+      "bpb": 1.5514563255451708,
+      "checkpoint_sha256": "64d9ad69fb53fceb1f424a5042d7829d3fb8518e8fc1f06a7549567c2dc1cfa7",
+      "modified_utc": "2026-09-29T03:44:30.131204+00:00"
+    },
+    {
+      "file": "code\\runs\\break15-d20-lr0003-s46\\metrics.json",
+      "kind": "later_training_metrics",
+      "seed": 46,
+      "run_train_tokens": 49152000,
+      "validation_bpb": 1.5701805331424907,
+      "modified_utc": "2026-09-29T08:58:08.384567+00:00"
+    },
+    {
+      "file": "code\\runs\\break15-pointer-lr00015-s47\\metrics.json",
+      "kind": "later_training_metrics",
+      "seed": 47,
+      "run_train_tokens": 49152000,
+      "validation_bpb": 1.5371511657823629,
+      "modified_utc": "2026-09-29T09:04:38.131493+00:00"
+    },
+    {
+      "file": "code\\runs\\break15-pointer2-lr0001-s48\\metrics.json",
+      "kind": "later_training_metrics",
+      "seed": 48,
+      "run_train_tokens": 49152000,
+      "validation_bpb": 1.5370322117416062,
+      "modified_utc": "2026-09-29T09:12:08.244617+00:00"
+    },
+    {
+      "file": "code\\runs\\final-candidate-depth8-v5\\test_cpu_fp32.json",
+      "kind": "test_evaluation",
+      "bpb": 1.4994128611199007,
+      "checkpoint_sha256": "191d188ccd07f6bbbd3862fd0297c3b64b6a475604cef5a1b3e364b87c41c4b1",
+      "modified_utc": "2026-09-29T09:16:56.337431+00:00"
+    }
+  ]
+}

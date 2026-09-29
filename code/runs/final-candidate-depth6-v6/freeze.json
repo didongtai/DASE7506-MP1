@@ -1,0 +1,42 @@
+{
+  "frozen_utc": "2026-09-29T12:12:57.218690+00:00",
+  "checkpoint_sha256": "7e1a556f26f047b02d78d97b74564598913f1b18b7318f2275c846124666555c",
+  "implementation": "student_fast",
+  "depth": 6,
+  "parameters": 5332484,
+  "validation_bpb": 1.5022012894865915,
+  "validation_seconds": 23.207330900011584,
+  "selection_split": "validation",
+  "test_evaluated_before_this_freeze": false,
+  "selection_reason": "6 layers provide more CPU margin than 7/8; preserve ngrams and prefix cache. Additional probability-storage optimizations leave validation BPB unchanged within floating-point error.",
+  "additional_training_targets": 0,
+  "same_config_and_model_tensors_as_validation_candidate": true,
+  "checkpoint_bytes": 63863873,
+  "inference_assets_including_sources_bytes": 63905769,
+  "real_checkpoint_contract": {
+    "finite": true,
+    "log_normalization_max_error": 9.51811671257019e-07,
+    "future_suffix_1_max_difference": 0.0,
+    "future_suffix_2_max_difference": 0.0,
+    "future_suffix_3_max_difference": 0.0,
+    "future_suffix_7_max_difference": 0.0,
+    "future_suffix_128_max_difference": 0.0,
+    "future_suffix_255_max_difference": 0.0,
+    "batch_independence_max_difference": 0.0,
+    "short_1_max_difference": 5.7220458984375e-06,
+    "short_2_max_difference": 5.7220458984375e-06,
+    "short_3_max_difference": 7.62939453125e-06,
+    "repeated_window_max_difference": 0.0,
+    "all_parameters_and_buffers_unchanged": true
+  },
+  "unit_tests_passed": 15,
+  "source_hashes": {
+    "student_fast.py": "2455f59b6221522483d07d190329b376002bbecc68a15389b16e1da2f219ce6f",
+    "student_cache.py": "214b6711e62db78ef571ff295b2ce46510893339545b3f9f862da67a82f0f5c4",
+    "student.py": "5d480d349cee7c913ce2757ba30cd99daebd39c7769b0ef3fb3d46d281796f91",
+    "common.py": "d40dc1fe6578b5993a563bdb4d9e5317ddc9fae8afe48822b66571c7042e84db",
+    "evaluate.py": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+    "train.py": "dc2e5313abcacad976b23ab291e54a3a5f1b8ac3141f2c4efb12977e041bf6c9",
+    "checkpoint.pt": "7e1a556f26f047b02d78d97b74564598913f1b18b7318f2275c846124666555c"
+  }
+}

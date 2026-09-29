@@ -1,0 +1,169 @@
+{
+  "started_utc": "2026-09-29T12:13:15.326922+00:00",
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.7.1+cu128",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "cpu",
+    "precision": "fp32",
+    "threads": 4
+  },
+  "schedule": [
+    "baseline-before",
+    "v6-1",
+    "v6-2",
+    "v6-3",
+    "baseline-after"
+  ],
+  "reference_bpb": 1.5189136237091485,
+  "reference_source": "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\audit\\v6\\frozen-test-repeat\\v6-1.json",
+  "frozen_hashes": {
+    "student_fast.py": "2455f59b6221522483d07d190329b376002bbecc68a15389b16e1da2f219ce6f",
+    "student_cache.py": "214b6711e62db78ef571ff295b2ce46510893339545b3f9f862da67a82f0f5c4",
+    "student.py": "5d480d349cee7c913ce2757ba30cd99daebd39c7769b0ef3fb3d46d281796f91",
+    "common.py": "d40dc1fe6578b5993a563bdb4d9e5317ddc9fae8afe48822b66571c7042e84db",
+    "evaluate.py": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+    "train.py": "dc2e5313abcacad976b23ab291e54a3a5f1b8ac3141f2c4efb12977e041bf6c9",
+    "runs\\final-candidate-depth6-v6\\checkpoint.pt": "7e1a556f26f047b02d78d97b74564598913f1b18b7318f2275c846124666555c",
+    "runs\\baseline-s17\\checkpoint.pt": "373ecbab12cc5e3e6f5004dcc23f6c93d593057b0a509cef392410739fb59d32",
+    "model.py": "6cce142a31d396f017319543f50d70f30fa6da740729af01c8baed13c6f671f9",
+    "data\\tokenizer.json": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+    "data\\wikitext_test.txt": "aca2f46735043bcfd0a44eca981d04627b9cdf74c4c9a04bf0856d04066f58fc",
+    "data\\wikitext_train.txt": "c58d555a94ada0882d1e8c0b3dc7ba68e1c269da5ad9e7a057300245d130c4e8",
+    "data\\wikitext_validation.txt": "714a24a5de7459876f7cfdc64837e551dd7cde2a51f95b763ee083fff273e307"
+  },
+  "runs": [
+    {
+      "run": "baseline-before",
+      "command": [
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\.venv\\Scripts\\python.exe",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\experiments\\measure_evaluation.py",
+        "--checkpoint",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\runs\\baseline-s17\\checkpoint.pt",
+        "--split",
+        "test",
+        "--threads",
+        "4",
+        "--output",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\audit\\v6\\frozen-test-repeat\\baseline-before.json"
+      ],
+      "bpb": 2.1012602707557906,
+      "seconds": 9.051077799871564,
+      "peak_working_set_gib": 1.784332275390625,
+      "all_score_and_identity_fields_exactly_match_reference": true,
+      "mismatching_fields": []
+    },
+    {
+      "run": "v6-1",
+      "command": [
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\.venv\\Scripts\\python.exe",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\experiments\\measure_evaluation.py",
+        "--checkpoint",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\runs\\final-candidate-depth6-v6\\checkpoint.pt",
+        "--split",
+        "test",
+        "--threads",
+        "4",
+        "--output",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\audit\\v6\\frozen-test-repeat\\v6-1.json"
+      ],
+      "bpb": 1.5189136237091485,
+      "seconds": 26.408071500016376,
+      "peak_working_set_gib": 2.2061920166015625,
+      "all_score_and_identity_fields_exactly_match_reference": true,
+      "mismatching_fields": [],
+      "per_window_losses_exactly_match_reference": true,
+      "max_absolute_per_window_nll_difference": 0.0,
+      "ratio_to_faster_baseline": 2.9922948502545745,
+      "passes_five_times_limit_with_faster_baseline": true
+    },
+    {
+      "run": "v6-2",
+      "command": [
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\.venv\\Scripts\\python.exe",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\experiments\\measure_evaluation.py",
+        "--checkpoint",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\runs\\final-candidate-depth6-v6\\checkpoint.pt",
+        "--split",
+        "test",
+        "--threads",
+        "4",
+        "--output",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\audit\\v6\\frozen-test-repeat\\v6-2.json"
+      ],
+      "bpb": 1.5189136237091485,
+      "seconds": 29.485757699934766,
+      "peak_working_set_gib": 2.2068405151367188,
+      "all_score_and_identity_fields_exactly_match_reference": true,
+      "mismatching_fields": [],
+      "per_window_losses_exactly_match_reference": true,
+      "max_absolute_per_window_nll_difference": 0.0,
+      "ratio_to_faster_baseline": 3.3410270386958874,
+      "passes_five_times_limit_with_faster_baseline": true
+    },
+    {
+      "run": "v6-3",
+      "command": [
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\.venv\\Scripts\\python.exe",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\experiments\\measure_evaluation.py",
+        "--checkpoint",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\runs\\final-candidate-depth6-v6\\checkpoint.pt",
+        "--split",
+        "test",
+        "--threads",
+        "4",
+        "--output",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\audit\\v6\\frozen-test-repeat\\v6-3.json"
+      ],
+      "bpb": 1.5189136237091485,
+      "seconds": 34.70094690006226,
+      "peak_working_set_gib": 2.2065467834472656,
+      "all_score_and_identity_fields_exactly_match_reference": true,
+      "mismatching_fields": [],
+      "per_window_losses_exactly_match_reference": true,
+      "max_absolute_per_window_nll_difference": 0.0,
+      "ratio_to_faster_baseline": 3.9319593900656233,
+      "passes_five_times_limit_with_faster_baseline": true
+    },
+    {
+      "run": "baseline-after",
+      "command": [
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\.venv\\Scripts\\python.exe",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\experiments\\measure_evaluation.py",
+        "--checkpoint",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\runs\\baseline-s17\\checkpoint.pt",
+        "--split",
+        "test",
+        "--threads",
+        "4",
+        "--output",
+        "D:\\Files\\HKU\\\u8bfe\u7a0b\\DASE7506\\MP1_student_starter\\code\\audit\\v6\\frozen-test-repeat\\baseline-after.json"
+      ],
+      "bpb": 2.1012602707557906,
+      "seconds": 8.825357400113717,
+      "peak_working_set_gib": 1.7841300964355469,
+      "all_score_and_identity_fields_exactly_match_reference": true,
+      "mismatching_fields": []
+    }
+  ],
+  "statistics": {
+    "candidate_seconds_min": 26.408071500016376,
+    "candidate_seconds_max": 34.70094690006226,
+    "candidate_seconds_mean": 30.19825870000447,
+    "candidate_seconds_median": 29.485757699934766,
+    "candidate_seconds_sample_stdev": 4.192098383446743,
+    "baseline_seconds": [
+      9.051077799871564,
+      8.825357400113717
+    ],
+    "faster_baseline_five_times_seconds": 44.126787000568584,
+    "candidate_median_to_baseline_mean_ratio": 3.2988408897047936,
+    "worst_candidate_to_faster_baseline_ratio": 3.9319593900656233,
+    "largest_candidate_peak_working_set_gib": 2.2068405151367188,
+    "all_candidate_runs_within_five_times_faster_baseline": true,
+    "all_candidate_scores_exactly_reproduced": true
+  },
+  "finished_utc": "2026-09-29T12:15:49.337083+00:00",
+  "all_frozen_hashes_verified_before_and_after_each_run": true,
+  "limitations": "Three pre-specified candidate runs on one Windows host; all runs retained. Does not certify other hosts or historical development compliance."
+}

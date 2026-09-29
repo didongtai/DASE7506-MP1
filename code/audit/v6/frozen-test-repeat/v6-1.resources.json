@@ -1,0 +1,6 @@
+{
+  "peak_working_set_bytes": 2368880640,
+  "peak_working_set_gib": 2.2061920166015625,
+  "checkpoint_bytes": 63863873,
+  "measurement": "process lifetime peak including loading and scoring"
+}

@@ -1,0 +1,663 @@
+{
+  "scope": "Checkpoint metadata and retained metrics trace; not a replay of all training. Does not prove decisions were independent of test feedback.",
+  "nodes": [
+    {
+      "file": "runs\\final-candidate-depth8-v5\\checkpoint.pt",
+      "kind": "assembly",
+      "sha256": "191d188ccd07f6bbbd3862fd0297c3b64b6a475604cef5a1b3e364b87c41c4b1",
+      "parents": [
+        "runs\\break15-pointer2-lr0001-s48\\checkpoint.pt",
+        "runs\\final-candidate-depth8-v4\\checkpoint.pt"
+      ],
+      "seed": 48,
+      "implementation": "student_cache",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling",
+        "interpolation",
+        "model_storage_dtype",
+        "ngram_source",
+        "assembly_sources"
+      ],
+      "metric_checkpoint_hash_matches": null,
+      "parent_hash_checks": {
+        "runs\\break15-pointer2-lr0001-s48\\checkpoint.pt": true,
+        "runs\\final-candidate-depth8-v4\\checkpoint.pt": true
+      }
+    },
+    {
+      "file": "runs\\final-candidate-depth8-v4\\checkpoint.pt",
+      "kind": "interpolation_or_derived_tables",
+      "sha256": "64d9ad69fb53fceb1f424a5042d7829d3fb8518e8fc1f06a7549567c2dc1cfa7",
+      "parents": [
+        "runs\\depth8-joint3-lr003125-s45\\checkpoint.pt",
+        "runs\\depth8-joint3-lr00625-s45\\checkpoint.pt"
+      ],
+      "seed": 45,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling",
+        "interpolation",
+        "model_storage_dtype",
+        "ngram_source"
+      ],
+      "metric_checkpoint_hash_matches": null,
+      "parent_hash_checks": {}
+    },
+    {
+      "file": "runs\\depth8-joint3-lr00625-s45\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "ce3993b0563109fd8f0608f76269459a87bee254450a488f802287be8c9d1a7f",
+      "parents": [
+        "runs\\depth8-final-pure-avg\\checkpoint.pt"
+      ],
+      "seed": 45,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\depth8-final-pure-avg\\checkpoint.pt",
+      "kind": "interpolation_or_derived_tables",
+      "sha256": "2ab1c9fbb9ce6e8ce743b3e52ccf04e136082ee3e5a94c7288569a33c8b11bca",
+      "parents": [
+        "runs\\depth8-joint2-lr00625-s44\\checkpoint.pt",
+        "runs\\depth8-joint2-lr0125-s44\\checkpoint.pt"
+      ],
+      "seed": 44,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling",
+        "interpolation"
+      ],
+      "metric_checkpoint_hash_matches": null,
+      "parent_hash_checks": {}
+    },
+    {
+      "file": "runs\\depth8-joint2-lr0125-s44\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "25f4045170b64f482a066417962211add6099263c0202eabcc226852d55fc83d",
+      "parents": [
+        "runs\\depth8-joint-lr0125-s43\\checkpoint.pt"
+      ],
+      "seed": 44,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\depth8-joint-lr0125-s43\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "e6310c61e293a074edc44a91dc1c10f5e20a3583664c2ee2271f2d616dbe5d1f",
+      "parents": [
+        "runs\\depth8-last2-lr3000-s42\\checkpoint.pt"
+      ],
+      "seed": 43,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\depth8-last2-lr3000-s42\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "cbbf77e443f68d0c5c80cdae557d8809a04a7ce62e038d3491f2866b1dbf2034",
+      "parents": [
+        "runs\\depth8-expanded\\checkpoint.pt"
+      ],
+      "seed": 42,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\depth8-expanded\\checkpoint.pt",
+      "kind": "depth_expansion",
+      "sha256": "4b510300ac1b83b403d2f9c0f447dcc2df6c28dbc37ac0e60bd9c6c483ccccac",
+      "parents": [
+        "runs\\gpu-final-pure\\checkpoint.pt"
+      ],
+      "seed": 38,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling",
+        "expansion"
+      ],
+      "metric_checkpoint_hash_matches": null,
+      "parent_hash_checks": {}
+    },
+    {
+      "file": "runs\\gpu-final-pure\\checkpoint.pt",
+      "kind": "interpolation_or_derived_tables",
+      "sha256": "49481a529891a3c7da2bc789d61533bd7c1e3027889ba7610b013e5c69a64549",
+      "parents": [
+        "runs\\gpu-stage8-lr00625-s38\\checkpoint.pt",
+        "runs\\gpu-stage8-lr0125-s38\\checkpoint.pt"
+      ],
+      "seed": 38,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling",
+        "interpolation"
+      ],
+      "metric_checkpoint_hash_matches": null,
+      "parent_hash_checks": {}
+    },
+    {
+      "file": "runs\\gpu-stage8-lr0125-s38\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "c4ed11860051b7448faa104c16fd585a8110d5942dcf134c86a69fa25a3a06e8",
+      "parents": [
+        "runs\\gpu-stage7-avg\\checkpoint.pt"
+      ],
+      "seed": 38,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-stage7-avg\\checkpoint.pt",
+      "kind": "interpolation_or_derived_tables",
+      "sha256": "4328f07ff27b410ee697a67919adf001bf18f50c94ccbbbb9660f73072f69067",
+      "parents": [
+        "runs\\gpu-stage7-lr00625-s37\\checkpoint.pt",
+        "runs\\gpu-stage7-lr0125-s37\\checkpoint.pt"
+      ],
+      "seed": 37,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling",
+        "interpolation"
+      ],
+      "metric_checkpoint_hash_matches": null,
+      "parent_hash_checks": {}
+    },
+    {
+      "file": "runs\\gpu-stage7-lr0125-s37\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "3b3e8365de0cbb2d54293d4425f92807e8cdd4e27052d5f0feb15a8265439a0f",
+      "parents": [
+        "runs\\gpu-stage6-lr0125-s36\\checkpoint.pt"
+      ],
+      "seed": 37,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-stage6-lr0125-s36\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "e2f1e860bc73fe081df10b2089aaf4456ca259ca8d542f55a49d4fa96d2efa68",
+      "parents": [
+        "runs\\gpu-stage5-lr0250-s35\\checkpoint.pt"
+      ],
+      "seed": 36,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-stage5-lr0250-s35\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "bb997b3e7979d880acab6375cef3df1493bde82452857e91a451880d559122e8",
+      "parents": [
+        "runs\\gpu-stage4-lr0500-s34\\checkpoint.pt"
+      ],
+      "seed": 35,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-stage4-lr0500-s34\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "0a9ad157ccfa88faec06167fa39f44132546dac3bfad4f5633c208c863c0ece4",
+      "parents": [
+        "runs\\gpu-stage3-lr1000-s33\\checkpoint.pt"
+      ],
+      "seed": 34,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-stage3-lr1000-s33\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "bcf0249d54c4a5c07783bfd22229cc69360cd9babece6e3bd5a82bb2f3dd13c6",
+      "parents": [
+        "runs\\gpu-stage2-lr3000-s32\\checkpoint.pt"
+      ],
+      "seed": 33,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-stage2-lr3000-s32\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "a3f4cf94f971aaa92cb6098acd25ddd35b8fcb97e96a36fd9d7ea923c6de1784",
+      "parents": [
+        "runs\\gpu-extrap-lr4000-s31\\checkpoint.pt"
+      ],
+      "seed": 32,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-extrap-lr4000-s31\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "5ba5afb89a701f4f832f036bce4eacf939b4b28c73ba490988a44befcb4192ee",
+      "parents": [
+        "runs\\large-extrap-a144\\checkpoint.pt"
+      ],
+      "seed": 31,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\large-extrap-a144\\checkpoint.pt",
+      "kind": "interpolation_or_derived_tables",
+      "sha256": "3cb75d540fa45c57a72f6b98585e0f838d16067fbc44fb4a97e3b5f080d3bb04",
+      "parents": [
+        "runs\\large-cont1-s18\\checkpoint.pt",
+        "runs\\large-cont2-s19\\checkpoint.pt"
+      ],
+      "seed": 19,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling",
+        "interpolation"
+      ],
+      "metric_checkpoint_hash_matches": null,
+      "parent_hash_checks": {}
+    },
+    {
+      "file": "runs\\large-cont2-s19\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "7330cb0520e779ee6934c974660a3f9a09fa0e78db59df42bab030b668a1920d",
+      "parents": [
+        "runs\\large-cont1-s18\\checkpoint.pt"
+      ],
+      "seed": 19,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\large-cont1-s18\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "6a438425b82c590a5d1dcf6cb77a2b9410b1721250afd5504336d55369a62a7a",
+      "parents": [
+        "runs\\large-1200-s17\\checkpoint.pt"
+      ],
+      "seed": 18,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\large-1200-s17\\checkpoint.pt",
+      "kind": "recorded_random_initialization_training",
+      "sha256": "0f2ee3be2750bdf4bcfbd9bdf720f9050eed4c2a236f8ff75565f3400d10c97e",
+      "parents": [],
+      "seed": 17,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-stage7-lr00625-s37\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "f22ca77936013a5e666b6f7de535274c00fc1d7c7fe5aedabde05e835ff3d84c",
+      "parents": [
+        "runs\\gpu-stage6-lr0125-s36\\checkpoint.pt"
+      ],
+      "seed": 37,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\gpu-stage8-lr00625-s38\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "3905a5bcbb7c4cef492de7cc734cee0f0811f0e71ef43a0c780b89eb46d0ea5f",
+      "parents": [
+        "runs\\gpu-stage7-avg\\checkpoint.pt"
+      ],
+      "seed": 38,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\depth8-joint2-lr00625-s44\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "5c00b396ed039693fcbad7c28f026d766b6e2ea19459f9869368dc657cdf6188",
+      "parents": [
+        "runs\\depth8-joint-lr0125-s43\\checkpoint.pt"
+      ],
+      "seed": 44,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\depth8-joint3-lr003125-s45\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "6bc248fe7e8d161b322fe9eff72f7223e870efa71a31c13e807dccd3428077b5",
+      "parents": [
+        "runs\\depth8-final-pure-avg\\checkpoint.pt"
+      ],
+      "seed": 45,
+      "implementation": "student",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 9830400
+    },
+    {
+      "file": "runs\\break15-pointer2-lr0001-s48\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "431ffed3e05ab53f7dda448a35a832316a5f85a3d5964fac2ce823a13acf32a0",
+      "parents": [
+        "runs\\break15-pointer-lr00015-s47\\checkpoint.pt"
+      ],
+      "seed": 48,
+      "implementation": "student_pointer",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 49152000
+    },
+    {
+      "file": "runs\\break15-pointer-lr00015-s47\\checkpoint.pt",
+      "kind": "training_continuation",
+      "sha256": "3408ebfb91bec2465921efee229d057bada8e8d1c7757fb87dfe655e6fca7bfe",
+      "parents": [
+        "runs\\break15-pointer-init\\checkpoint.pt"
+      ],
+      "seed": 47,
+      "implementation": "student_pointer",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling"
+      ],
+      "metric_checkpoint_hash_matches": true,
+      "parent_hash_checks": {},
+      "added_targets": 49152000
+    },
+    {
+      "file": "runs\\break15-pointer-init\\checkpoint.pt",
+      "kind": "interpolation_or_derived_tables",
+      "sha256": "625aef171773bc79692aafc8113730c7ace03d28e96991448611f42499634d88",
+      "parents": [
+        "runs\\depth8-joint3-lr003125-s45\\checkpoint.pt",
+        "runs\\depth8-joint3-lr00625-s45\\checkpoint.pt"
+      ],
+      "seed": 45,
+      "implementation": "student_pointer",
+      "checkpoint_keys": [
+        "protocol",
+        "implementation",
+        "config",
+        "model",
+        "seed",
+        "train_tokens",
+        "sampling",
+        "interpolation"
+      ],
+      "metric_checkpoint_hash_matches": null,
+      "parent_hash_checks": {}
+    }
+  ],
+  "node_count": 29,
+  "roots": [
+    "runs\\large-1200-s17\\checkpoint.pt"
+  ],
+  "unresolved": [],
+  "metric_hash_mismatches": [],
+  "recorded_parent_hash_mismatches": []
+}

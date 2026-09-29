@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-29",
+  "timing_sequence": [
+    "baseline-before",
+    "v5-repeat",
+    "baseline-after"
+  ],
+  "model_changed_during_audit": false,
+  "v5_bpb_exactly_matches_original": true,
+  "v5_seconds": 42.965789600042626,
+  "baseline_seconds": [
+    8.698037599911913,
+    8.695158200105652
+  ],
+  "largest_measured_time_ratio": 4.941346507015889,
+  "seconds_below_five_times_faster_baseline": 0.5100014004856348,
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 11,
+    "failed": 0,
+    "scope": "Existing tests use small models; audit.json separately checks the real frozen checkpoint and records its short-input defect."
+  },
+  "outstanding": [
+    "1-3-token predict_log_probs raises KeyError; fixed evaluator pads every input window to 256",
+    "Submission report content and at-most-10-page presentation still need final preparation/verification",
+    "Immutable code/checkpoint publication links have not been verified",
+    "Multiple candidate test evaluations preceded later development; no-test-based-tuning compliance cannot be certified",
+    "All three latest frozen runs exceed 5x both same-round baseline timings; earlier 4.94x result is not a reliable compliance guarantee."
+  ],
+  "measurement_limits": [
+    "Timing and working set measured only on this Windows host, torch 2.7.1+cu128, CPU FP32, four threads",
+    "Asset accounting includes checkpoint and its two inference source files, excludes supplied benchmark data/environment and audit/training-only files"
+  ],
+  "original_package_verified": true,
+  "guide_matches_original_zip": true,
+  "package_manifest_internally_inconsistent_files": [
+    "GUIDE.md",
+    "code/README.md"
+  ],
+  "lineage_nodes_reviewed": 29,
+  "lineage_unresolved_nodes": 0,
+  "development_script_guard": {
+    "file": "experiments/cache_sweep.py",
+    "change": "Only validation is accepted for hyperparameter sweeps; --split test rejected before data loading.",
+    "verified": true,
+    "historical_test_usage_not_resolved_by_this_fix": true
+  },
+  "overall_compliance_verdict": "Cannot certify compliance: latest repeated CPU timings exceed the 5x limit; historical test/development process also remains unresolved.",
+  "latest_repeat_evaluation": {
+    "summary": "repeated-evaluation-20260929/summary.json",
+    "candidate_seconds_min": 34.13223880017176,
+    "candidate_seconds_max": 34.27113700006157,
+    "candidate_seconds_mean": 34.19666853337549,
+    "candidate_seconds_median": 34.186629799893126,
+    "candidate_seconds_sample_stdev": 0.06999113951497526,
+    "baseline_seconds": [
+      6.092016800073907,
+      6.452472900040448
+    ],
+    "faster_baseline_five_times_seconds": 30.460084000369534,
+    "candidate_median_to_baseline_mean_ratio": 5.450461615761299,
+    "worst_candidate_to_faster_baseline_ratio": 5.62558149866655,
+    "largest_candidate_peak_working_set_gib": 2.207000732421875,
+    "all_candidate_runs_within_five_times_faster_baseline": false,
+    "all_candidate_scores_exactly_reproduced": true
+  },
+  "current_cpu_limit_status": "FAIL: all three latest runs exceed 5x even the slower bracketing baseline.",
+  "historical_record_note": "Top-level original timing fields describe the earlier audit. latest_repeat_evaluation/current_cpu_limit_status contain the newer repeated timing outcome."
+}

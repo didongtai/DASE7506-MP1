@@ -1,0 +1,126 @@
+{
+  "archive_sha256": "755f40ca111f901c6f2672e3744b894f1af112bc70fa00323b19dbf36d20950b",
+  "comparison": [
+    {
+      "file": "GUIDE.md",
+      "zip_sha256": "fa62a767b3af8bf59906ee2698ae839ee761eeef685b21090fcf79800bdfb050",
+      "current_sha256": "fa62a767b3af8bf59906ee2698ae839ee761eeef685b21090fcf79800bdfb050",
+      "matches_zip": true
+    },
+    {
+      "file": "code/requirements.txt",
+      "zip_sha256": "901a883f6b85ac79faaac149808f5eee8ec0ed0c36482255304c0124700319af",
+      "current_sha256": "901a883f6b85ac79faaac149808f5eee8ec0ed0c36482255304c0124700319af",
+      "matches_zip": true
+    },
+    {
+      "file": "code/PACKAGE_MANIFEST.json",
+      "zip_sha256": "2a414fb99d00841fc5f7500cf2cda3af825a55dd7e2b5cb5a7d50bcae84917a4",
+      "current_sha256": "2a414fb99d00841fc5f7500cf2cda3af825a55dd7e2b5cb5a7d50bcae84917a4",
+      "matches_zip": true
+    },
+    {
+      "file": "code/RUN_LOG_TEMPLATE.csv",
+      "zip_sha256": "9d9b59c48ef637113a72774e08f8912f106f8821224a9397974400b6219d0176",
+      "current_sha256": "9d9b59c48ef637113a72774e08f8912f106f8821224a9397974400b6219d0176",
+      "matches_zip": true
+    },
+    {
+      "file": "code/model.py",
+      "zip_sha256": "6cce142a31d396f017319543f50d70f30fa6da740729af01c8baed13c6f671f9",
+      "current_sha256": "6cce142a31d396f017319543f50d70f30fa6da740729af01c8baed13c6f671f9",
+      "matches_zip": true
+    },
+    {
+      "file": "code/README.md",
+      "zip_sha256": "38b196fc2d3f0f50fd8633ea638d4f199d66c2d301aa4f632300be90557f7ea2",
+      "current_sha256": "45e1b8abb415629754cd07fe0fb39bbb534579ce5c2301e518c27dbaa324a6ce",
+      "matches_zip": false
+    },
+    {
+      "file": "code/common.py",
+      "zip_sha256": "d40dc1fe6578b5993a563bdb4d9e5317ddc9fae8afe48822b66571c7042e84db",
+      "current_sha256": "d40dc1fe6578b5993a563bdb4d9e5317ddc9fae8afe48822b66571c7042e84db",
+      "matches_zip": true
+    },
+    {
+      "file": "code/.gitignore",
+      "zip_sha256": "6a3de44e1ab72d807c29424180c2c1087222d4ed5643d76662b1f3c6d7516225",
+      "current_sha256": "6a3de44e1ab72d807c29424180c2c1087222d4ed5643d76662b1f3c6d7516225",
+      "matches_zip": true
+    },
+    {
+      "file": "code/train.py",
+      "zip_sha256": "70c16a20537de1286737f9eb056bc453a9b87b33ae7f1024677d415650979dfe",
+      "current_sha256": "dc2e5313abcacad976b23ab291e54a3a5f1b8ac3141f2c4efb12977e041bf6c9",
+      "matches_zip": false
+    },
+    {
+      "file": "code/evaluate.py",
+      "zip_sha256": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+      "current_sha256": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+      "matches_zip": true
+    },
+    {
+      "file": "code/student.py",
+      "zip_sha256": "203d9ded22b08303d47392ce559037782ba277e48e63cc128dfc389cf76a6ead",
+      "current_sha256": "5d480d349cee7c913ce2757ba30cd99daebd39c7769b0ef3fb3d46d281796f91",
+      "matches_zip": false
+    },
+    {
+      "file": "code/tests/test_contract.py",
+      "zip_sha256": "cee95caea815cf8cd0d5624ad4110d37016245b8359f39548e2ef8a0230e72d4",
+      "current_sha256": "cee95caea815cf8cd0d5624ad4110d37016245b8359f39548e2ef8a0230e72d4",
+      "matches_zip": true
+    },
+    {
+      "file": "code/configs/baseline.json",
+      "zip_sha256": "6b0c87aa8e15107b78d9789b8f254559735eb0eee81f941715bcc216bdb09e7d",
+      "current_sha256": "6b0c87aa8e15107b78d9789b8f254559735eb0eee81f941715bcc216bdb09e7d",
+      "matches_zip": true
+    },
+    {
+      "file": "code/data/tokenizer.json",
+      "zip_sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+      "current_sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+      "matches_zip": true
+    },
+    {
+      "file": "code/data/wikitext_validation.txt",
+      "zip_sha256": "714a24a5de7459876f7cfdc64837e551dd7cde2a51f95b763ee083fff273e307",
+      "current_sha256": "714a24a5de7459876f7cfdc64837e551dd7cde2a51f95b763ee083fff273e307",
+      "matches_zip": true
+    },
+    {
+      "file": "code/data/manifest.json",
+      "zip_sha256": "f4790bb599d9fcd04e48263e685335e2f62d9bca0324b08061a10c38984f4fe4",
+      "current_sha256": "f4790bb599d9fcd04e48263e685335e2f62d9bca0324b08061a10c38984f4fe4",
+      "matches_zip": true
+    },
+    {
+      "file": "code/data/wikitext_test.txt",
+      "zip_sha256": "aca2f46735043bcfd0a44eca981d04627b9cdf74c4c9a04bf0856d04066f58fc",
+      "current_sha256": "aca2f46735043bcfd0a44eca981d04627b9cdf74c4c9a04bf0856d04066f58fc",
+      "matches_zip": true
+    },
+    {
+      "file": "code/data/wikitext_train.txt",
+      "zip_sha256": "c58d555a94ada0882d1e8c0b3dc7ba68e1c269da5ad9e7a057300245d130c4e8",
+      "current_sha256": "c58d555a94ada0882d1e8c0b3dc7ba68e1c269da5ad9e7a057300245d130c4e8",
+      "matches_zip": true
+    }
+  ],
+  "internal_zip_manifest_mismatches": [
+    {
+      "manifest_path": "guide/GUIDE.md",
+      "expected": "132409af856b3ab6ae9222fff0b47651dcc710734b707d35972792f9f28b7496",
+      "actual_in_zip": "fa62a767b3af8bf59906ee2698ae839ee761eeef685b21090fcf79800bdfb050"
+    },
+    {
+      "manifest_path": "code/README.md",
+      "expected": "39505001e4b8e8a6b5edb6454d0eae907acd2baf95e126105b3063328addb5f2",
+      "actual_in_zip": "38b196fc2d3f0f50fd8633ea638d4f199d66c2d301aa4f632300be90557f7ea2"
+    }
+  ],
+  "conclusion": "Local GUIDE.md exactly matches the user-supplied ZIP. The ZIP manifest itself does not match its GUIDE.md/README.md; this is not evidence of local guide editing."
+}
